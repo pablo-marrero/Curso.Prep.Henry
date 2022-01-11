@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return srt
+  return str
 }
 
 function suma(x, y) {
@@ -101,7 +101,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  return num % 2 == 0
+  return num % 2 != 0
 }
 
 function elevarAlCuadrado(num) {
@@ -146,15 +146,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero > 0){
-      return console.log(`Es positivo`)
-  } 
-  if(numero < 0){
-    return console.log(`Es negativo`)
-  } 
-  else{
+  if(numero === 0){
     return false
   }
+  if(numero > 0){
+      return console.log("Es positivo")
+  } 
+  if(numero < 0){
+    return console.log("Es negativo")
+  } 
 }
 
 function agregarSimboloExclamacion(str) {
@@ -176,7 +176,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola " + nombre
+  return "Hola " + nombre  + "!"
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -196,7 +196,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return base * altura
+  return (base * altura) / 2
 }
 
 
@@ -215,14 +215,14 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-    return console.log(`Dato incorrecto`)
+    return console.log("Dato incorrecto")
   }
   else{
     if(letra == "a" || "e" || "i" || "o" || "u"){
-      return console.log(`Es vocal`)
+      return console.log("Es vocal")
     }
-    else{
-      return console.log(`Dato incorrecto`)
+    if(letra != "a" || "e" || "i" || "o" || "u"){
+      return console.log("Dato incorrecto")
     }
   }
 }
