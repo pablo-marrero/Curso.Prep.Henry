@@ -150,10 +150,10 @@ function esPositivo(numero) {
     return false
   }
   if(numero > 0){
-      return console.log("Es positivo")
+      return "Es positivo"
   } 
   if(numero < 0){
-    return console.log("Es negativo")
+    return "Es negativo"
   } 
 }
 
@@ -215,14 +215,14 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-    return console.log("Dato incorrecto")
+    return "Dato incorrecto"
   }
   else{
-    if(letra == "a" || "e" || "i" || "o" || "u"){
-      return console.log("Es vocal")
+    if(letra === "a" || letra === "e" ||letra === "i" || letra === "o" || letra === "u"){
+      return "Es vocal"
     }
-    if(letra != "a" || "e" || "i" || "o" || "u"){
-      return console.log("Dato incorrecto")
+    if(letra != "a" || letra != "e" || letra != "i" || letra != "o" || letra != "u"){
+      return "Dato incorrecto"
     }
   }
 }
